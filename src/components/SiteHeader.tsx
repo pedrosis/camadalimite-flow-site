@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoWhite from "@/assets/logo-white.svg";
+import logoHeaderWhite from "@/assets/logo-header-white.svg";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
@@ -38,7 +38,7 @@ const SiteHeader = () => {
           }}
           className="block"
         >
-          <img src={logoWhite} alt="Camada Limite" className="h-6 md:h-8" />
+          <img src={logoHeaderWhite} alt="Camada Limite" className="h-6 md:h-8" />
         </a>
         <nav className="flex gap-4 md:gap-8">
           {navLinks.map((link) => (

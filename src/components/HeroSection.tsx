@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import chalkboardBg from "@/assets/chalkboard-bg.png";
-import logoWhite from "@/assets/logo-white.svg";
+import logoHeroWhite from "@/assets/logo-hero-white.svg";
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -80,7 +80,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center">
-        <img src={logoWhite} alt="Camada Limite" className="w-[280px] sm:w-[400px] md:w-[550px]" />
+        <img src={logoHeroWhite} alt="Camada Limite" className="w-[280px] sm:w-[400px] md:w-[550px]" />
         <p className="mt-6 font-body text-sm md:text-base tracking-[0.3em] uppercase text-muted-foreground">
           Acoustic duo — rock, pop, MPB e clássicos.
         </p>
