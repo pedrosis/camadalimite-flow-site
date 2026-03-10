@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import chalkboardBg from "@/assets/chalkboard-bg.png";
-import logoWhite from "@/assets/logo-white.svg";
+import logoHeroWhite from "@/assets/logo-hero-white.svg";
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
