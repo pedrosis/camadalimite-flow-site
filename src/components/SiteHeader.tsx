@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoWhite from "@/assets/logo-white.svg";
+import logoHeaderWhite from "@/assets/logo-header-white.svg";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
