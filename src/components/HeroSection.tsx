@@ -80,11 +80,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center">
-        <h1 className="text-6xl sm:text-7xl md:text-9xl font-display font-bold leading-[0.9] tracking-[0.15em] text-foreground">
-          CAMADA
-          <br />
-          LIMITE
-        </h1>
+        <img src={logoWhite} alt="Camada Limite" className="w-[280px] sm:w-[400px] md:w-[550px]" />
         <p className="mt-6 font-body text-sm md:text-base tracking-[0.3em] uppercase text-muted-foreground">
           Acoustic duo — rock, pop, MPB e clássicos.
         </p>
