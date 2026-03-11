@@ -4,6 +4,7 @@ import logoHeaderWhite from "@/assets/logo-header-white.svg";
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Agenda", href: "#agenda" },
+  { label: "Ao Vivo", href: "#aovivo" },
   { label: "Repertório", href: "#repertorio" },
   { label: "Contato", href: "#contato" },
 ];
