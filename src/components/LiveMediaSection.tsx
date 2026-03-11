@@ -77,7 +77,7 @@ const LiveMediaSection = () => {
 
         <div
           ref={scrollRef}
-          className="flex gap-5 overflow-x-auto px-6 md:px-12 pb-4 scrollbar-thin"
+          className="flex gap-5 overflow-x-auto px-14 md:px-20 pb-4 scrollbar-thin"
           style={{ scrollbarWidth: "thin" }}
         >
           {mediaItems.map((item, i) => (
