@@ -51,7 +51,7 @@ const ShowsSection = () => {
       );
     }
     return (
-      <div className="flex flex-col gap-4 max-h-[360px] overflow-y-auto pr-2 scrollbar-thin">
+      <div className="flex flex-col gap-4 max-h-[420px] overflow-y-auto pr-2 scrollbar-thin">
         {list.map((show, i) => (
           <motion.div
             key={show.isoDate + show.venue}
@@ -73,7 +73,7 @@ const ShowsSection = () => {
   };
 
   return (
-    <section id="agenda" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="agenda" className="relative pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{ backgroundImage: `url(${bgAgenda})` }}
