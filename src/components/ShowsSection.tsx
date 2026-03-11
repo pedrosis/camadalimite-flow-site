@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import bgAgenda from "@/assets/bg-agenda.png";
 
 const shows = [
   { venue: "Bar do Zé", city: "Presidente Prudente", date: "12 Jul 2026" },
@@ -23,8 +24,13 @@ const ShowsSection = () => {
   };
 
   return (
-    <section id="agenda" className="py-24 md:py-32">
-      <div className="section-container">
+    <section id="agenda" className="relative py-24 md:py-32 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-15"
+        style={{ backgroundImage: `url(${bgAgenda})` }}
+      />
+      <div className="absolute inset-0 bg-background/70" />
+      <div className="section-container relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
