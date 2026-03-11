@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
+import bgContato from "@/assets/bg-contato.png";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-24 md:py-32">
-      <div className="section-container text-center">
+    <section id="contato" className="relative py-24 md:py-32 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-15"
+        style={{ backgroundImage: `url(${bgContato})` }}
+      />
+      <div className="absolute inset-0 bg-background/70" />
+      <div className="section-container text-center relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

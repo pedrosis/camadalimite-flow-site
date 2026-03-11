@@ -1,9 +1,15 @@
 import { motion } from "framer-motion";
+import bgSobre from "@/assets/bg-sobre.png";
 
 const AboutSection = () => {
   return (
-    <section id="sobre" className="py-24 md:py-32">
-      <div className="section-container">
+    <section id="sobre" className="relative py-24 md:py-32 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-15"
+        style={{ backgroundImage: `url(${bgSobre})` }}
+      />
+      <div className="absolute inset-0 bg-background/70" />
+      <div className="section-container relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
