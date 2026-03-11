@@ -51,7 +51,7 @@ const ShowsSection = () => {
       );
     }
     return (
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 max-h-[360px] overflow-y-auto pr-2 scrollbar-thin">
         {list.map((show, i) => (
           <motion.div
             key={show.isoDate + show.venue}
@@ -59,7 +59,7 @@ const ShowsSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: i * 0.08 }}
-            className="show-card"
+            className="show-card flex-shrink-0"
           >
             <h3 className="font-display text-lg tracking-wider text-foreground mb-2">
               {show.venue}
