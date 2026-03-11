@@ -42,7 +42,7 @@ const ShowsSection = () => {
         </motion.h2>
       </div>
 
-      <div className="relative">
+      <div className="relative z-10">
         {/* Arrows */}
         <button
           onClick={() => scroll("left")}

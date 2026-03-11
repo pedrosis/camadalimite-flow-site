@@ -9,7 +9,7 @@ const AboutSection = () => {
         style={{ backgroundImage: `url(${bgSobre})` }}
       />
       <div className="absolute inset-0 bg-background/70" />
-      <div className="section-container">
+      <div className="section-container relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
