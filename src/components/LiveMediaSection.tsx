@@ -54,7 +54,6 @@ const LiveMediaSection = () => {
           Acompanhe o Camada Limite no Instagram para ver os próximos shows.
         </motion.p>
       </div>
-      </div>
     </section>
   );
 };
