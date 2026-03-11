@@ -73,7 +73,7 @@ const ShowsSection = () => {
   };
 
   return (
-    <section id="agenda" className="relative py-24 md:py-32 overflow-hidden">
+    <section id="agenda" className="relative pt-24 pb-16 md:pt-32 md:pb-20 overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{ backgroundImage: `url(${bgAgenda})` }}
