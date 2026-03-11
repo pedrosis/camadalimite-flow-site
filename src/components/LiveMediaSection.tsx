@@ -1,12 +1,18 @@
 import { motion } from "framer-motion";
 import { Video, Camera, Image } from "lucide-react";
+import bgAovivo from "@/assets/bg-aovivo.png";
 
 const icons = [Video, Camera, Image];
 
 const LiveMediaSection = () => {
   return (
-    <section className="py-24 md:py-32">
-      <div className="section-container">
+    <section className="relative py-24 md:py-32 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-15"
+        style={{ backgroundImage: `url(${bgAovivo})` }}
+      />
+      <div className="absolute inset-0 bg-background/70" />
+      <div className="section-container relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
