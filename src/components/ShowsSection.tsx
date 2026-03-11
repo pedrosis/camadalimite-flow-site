@@ -51,7 +51,7 @@ const ShowsSection = () => {
       );
     }
     return (
-      <div className="flex flex-col gap-4 max-h-[360px] overflow-y-auto pr-2 scrollbar-thin">
+      <div className="flex flex-col gap-4 max-h-[420px] overflow-y-auto pr-2 scrollbar-thin">
         {list.map((show, i) => (
           <motion.div
             key={show.isoDate + show.venue}
