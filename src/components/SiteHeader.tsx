@@ -4,7 +4,7 @@ import logoHeaderWhite from "@/assets/logo-header-white.svg";
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
   { label: "Agenda", href: "#agenda" },
-  { label: "Ao Vivo", href: "#aovivo" },
+  // { label: "Ao Vivo", href: "#aovivo" },
   { label: "Repertório", href: "#repertorio" },
   { label: "Contato", href: "#contato" },
 ];
@@ -26,9 +26,8 @@ const SiteHeader = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "header-blur" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "header-blur" : "bg-transparent"
+        }`}
     >
       <div className="section-container flex items-center justify-between py-4">
         <a

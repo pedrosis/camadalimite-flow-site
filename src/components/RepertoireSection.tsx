@@ -2,10 +2,10 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { motion } from "framer-motion";
 
 const artists = [
-  "Coldplay", "Legião Urbana", "Queen", "Arctic Monkeys", "Cazuza",
-  "Red Hot Chili Peppers", "Charlie Brown Jr", "John Mayer", "Oasis",
-  "The Beatles", "Foo Fighters", "Pearl Jam", "Nirvana", "U2",
-  "Capital Inicial", "Barão Vermelho", "Paralamas", "Skank",
+  "Coldplay", "The Cramberies", "Tim Maia", "Tribalistas", "Nando Reis", "Marjorie Estiano", "Skank",
+  "Billie Eilish", "Kid Abelha", "Vanessa da Mata", "Marisa Monte", "Cassia Eller", "Pitty", "Rita Lee", "Amy Winehouse",
+  "Ivete Sangalo", "Ana Carolina", "Anavitória", "Marron 5", "P!nk", "Avril Lavigne", "Paramore", "Los Hermanos", "Natiruts",
+  "Lulu Santos", "Os Paralamas do Sucesso", "Oasis", "Capital Inicial",
 ];
 
 interface Particle {
