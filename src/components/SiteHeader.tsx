@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import logoHeaderWhite from "@/assets/logo-header-white.svg";
 
 const navLinks = [
@@ -11,6 +12,7 @@ const navLinks = [
 
 const SiteHeader = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -20,33 +22,67 @@ const SiteHeader = () => {
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
+    setMenuOpen(false);
     const el = document.querySelector(href);
     el?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "header-blur" : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled || menuOpen ? "header-blur" : "bg-transparent"
+      }`}
     >
       <div className="section-container flex items-center justify-between py-4">
         <a
           href="#"
           onClick={(e) => {
             e.preventDefault();
+            setMenuOpen(false);
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
           className="block"
         >
           <img src={logoHeaderWhite} alt="Camada Limite" className="h-6 md:h-8" />
         </a>
-        <nav className="flex gap-4 md:gap-8">
+
+        {/* Desktop nav */}
+        <nav className="hidden md:flex gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleClick(e, link.href)}
-              className="font-body text-xs md:text-sm tracking-widest uppercase text-muted-foreground hover:text-accent transition-colors duration-300"
+              className="font-body text-sm tracking-widest uppercase text-muted-foreground hover:text-accent transition-colors duration-300"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Mobile hamburger */}
+        <button
+          className="md:hidden text-foreground"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ${
+          menuOpen ? "max-h-64" : "max-h-0"
+        }`}
+      >
+        <nav className="section-container flex flex-col gap-4 pb-6">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={(e) => handleClick(e, link.href)}
+              className="font-body text-sm tracking-widest uppercase text-muted-foreground hover:text-accent transition-colors duration-300"
             >
               {link.label}
             </a>
