@@ -5,7 +5,8 @@ const artists = [
   "Coldplay", "The Cramberies", "Tim Maia", "Tribalistas", "Nando Reis", "Marjorie Estiano", "Skank",
   "Billie Eilish", "Kid Abelha", "Vanessa da Mata", "Marisa Monte", "Cassia Eller", "Pitty", "Rita Lee", "Amy Winehouse",
   "Ivete Sangalo", "Ana Carolina", "Anavitória", "Marron 5", "P!nk", "Avril Lavigne", "Paramore", "Los Hermanos", "Natiruts",
-  "Lulu Santos", "Os Paralamas do Sucesso", "Oasis", "Capital Inicial",
+  "Lulu Santos", "Os Paralamas do Sucesso", "Oasis", "Capital Inicial", "Djavan", "Engenheiros do Hawai", "Jorge Vercilo", "Alceu Valença",
+  "Cazuza",
 ];
 
 interface Particle {
