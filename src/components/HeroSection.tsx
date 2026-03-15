@@ -80,7 +80,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center">
-        <img src={logoHeroWhite} alt="Camada Limite" className="w-[280px] sm:w-[400px] md:w-[550px]" />
+        <img src={logoHeroWhite} alt="Camada Limite" className="w-[280px] sm:w-[400px] md:w-[550px] mx-auto block" />
         <p className="mt-6 font-body text-sm md:text-base tracking-[0.3em] uppercase text-muted-foreground">
           Acoustic duo — rock, pop, MPB e clássicos.
         </p>
