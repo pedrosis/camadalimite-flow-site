@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import bgSobre from "@/assets/bg-sobre.png";
+import aboutUsPhoto from "@/assets/aboutus.jpg";
 
 const AboutSection = () => {
   return (
@@ -27,11 +28,13 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="aspect-[4/3] border border-primary bg-card flex items-center justify-center"
+            className="aspect-[4/3] border border-primary bg-card overflow-hidden"
           >
-            <span className="font-display text-sm tracking-widest text-muted-foreground">
-              FOTO DA BANDA
-            </span>
+            <img
+              src={aboutUsPhoto}
+              alt="Camada Limite ao vivo"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
 
           {/* Text */}
