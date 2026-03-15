@@ -42,9 +42,11 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <p className="font-body text-base md:text-lg leading-relaxed text-accent">
-              Camada Limite é um duo acústico que mistura rock, pop e MPB em versões cheias 
-              de personalidade. Com arranjos minimalistas e energia ao vivo, o projeto nasceu 
-              da paixão pela música e pela conexão com o público em bares e eventos.
+              Camada Limite nasceu do encontro entre duas paixões: engenharia e música.
+              Como na mecânica dos fluidos, onde a camada limite é a região em que o escoamento muda
+              de comportamento ao tocar uma superfície, é no contato com o público que nosso som ganha forma.
+              Somos um duo que navega entre rock, pop, pop rock e MPB, explorando essa zona de interação onde técnica,
+              emoção e música entram em fluxo!
             </p>
           </motion.div>
         </div>
