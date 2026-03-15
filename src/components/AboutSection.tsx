@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import bgSobre from "@/assets/bg-sobre.png";
+import aboutUsPhoto from "@/assets/aboutus.jpg";
 
 const AboutSection = () => {
   return (
