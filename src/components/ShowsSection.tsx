@@ -10,7 +10,7 @@ interface Show {
 }
 
 const shows: Show[] = [
-  // { venue: "Bar do Zé", city: "Presidente Prudente", date: "12 Jul 2026", isoDate: "2026-07-12" },
+  { venue: "Choperia Pimenta", city: "Ilha Solteira", date: "28 Mar 2026", isoDate: "2026-03-28" },
   // { venue: "Espaço Cultural", city: "Marília", date: "19 Jul 2026", isoDate: "2026-07-19" },
   // { venue: "Pub Rock", city: "Assis", date: "26 Jul 2026", isoDate: "2026-07-26" },
   // { venue: "Boteco do Vini", city: "Presidente Prudente", date: "02 Ago 2026", isoDate: "2026-08-02" },
