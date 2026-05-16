@@ -11,9 +11,9 @@ interface Show {
 
 const shows: Show[] = [
   { venue: "Choperia Pimenta", city: "Ilha Solteira", date: "28 Mar 2026", isoDate: "2026-03-28" },
-  // { venue: "Espaço Cultural", city: "Marília", date: "19 Jul 2026", isoDate: "2026-07-19" },
-  // { venue: "Pub Rock", city: "Assis", date: "26 Jul 2026", isoDate: "2026-07-26" },
-  // { venue: "Boteco do Vini", city: "Presidente Prudente", date: "02 Ago 2026", isoDate: "2026-08-02" },
+  { venue: "Choperia Pimenta", city: "Ilha Solteira", date: "02 Mai 2026", isoDate: "2026-05-02" },
+  { venue: "Black Wolf Games", city: "Ilha Solteira", date: "16 Mai 2026", isoDate: "2026-05-16" },
+  { venue: "Aniversário da Isa", city: "Guaraçaí", date: "20 Jun 2026", isoDate: "2026-06-20" },
   // { venue: "Casa de Shows", city: "Londrina", date: "09 Ago 2026", isoDate: "2026-08-09" },
 ];
 
